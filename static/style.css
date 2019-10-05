@@ -1,0 +1,99 @@
+#top {
+	background-image: url(/static/backdrop.png);
+	width: 100%;
+	min-height: 100vh;
+	color: #fff;
+	background-size: cover;
+}
+
+#center-cluster {
+	display:flex;
+	flex-direction: column;
+	justify-content:left;
+	align-items:center;
+	padding-top: 20vh;
+	width: 70%
+}
+
+#homebuttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.homebuttondiv {
+	background-color: rgba(0,0,0,0.66);
+	padding: 2em;
+	width: 10em;
+	border: 2px solid white;
+}
+
+.homebuttoncontent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.homebuttonsseparator {
+	width: 5em;
+}
+
+#welcome {
+	color: #fff;
+	font-size: 4em;
+}
+
+#nottop {
+	padding: 2em;
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+#tmp{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+#top button {
+	border: none;
+	padding: 0.5em 1.5em 0.5em 1.5em;
+	background-color: #ff6f30;
+	color: #fff;
+}
+
+#headerleft {
+	display: flex;
+	align-items: center;
+
+}
+
+#headerleft img {
+	height: 3em;
+	object-fit: contain;
+}
+
+#headerright {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 20em;
+
+}
+
+#header{
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#headerleft h1 {
+	margin: 0;
+}
