@@ -1,0 +1,33 @@
+body {
+    background-image: url('http://news.bbc.co.uk/media/images/44112000/jpg/_44112880_emu_pa416.jpg')
+}
+p, h1, h2 {
+    font-family: "Comic Sans MS";
+    color: red
+    }
+
+.content, #shirtpromo {
+margin: 0 auto;
+border-radius: 5px;
+padding: 5px;
+background-color: wheat;
+width: fit-content;
+}
+
+#shirtprice {
+    color: orange
+    }
+
+a {
+    color: inherit;
+    }
+
+#subscribebean {
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    }
+
+#subscribebean img {
+    transform: rotate(15deg);
+    }
