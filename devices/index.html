@@ -102,8 +102,8 @@
 </head>
 
 <body>
-<script src="/static/OpenLayers.js"></script>
-<script src="/static/mxn.js?" type="text/javascript"></script>
+<script src="http://openlayers.org/api/OpenLayers.js"></script>
+<script src="http://mapstraction.com/mxn/build/latest/mxn.js?(openlayers)" type="text/javascript"></script>
 <div id="content">
 <div id="sidebar">
 	<div id="top">
@@ -120,8 +120,8 @@
 				<h2> connor&#39;s dog </h2>
 
 				<div class="device-info">
-				<div class="device-info-battery"> <img src="/static/battery.png" > 50%</div>
-				<div class="device-info-last-seen"> <img src="/static/location.png"> in my bed</div>
+				<div class="device-info-battery"> <img src="/battery.png" > 50%</div>
+				<div class="device-info-last-seen"> <img src="/location.png"> in my bed</div>
 				</div>
 			</div>
 		>
@@ -133,8 +133,8 @@
 				<h2> connor&#39;s boyfriend </h2>
 
 				<div class="device-info">
-				<div class="device-info-battery"> <img src="/static/battery.png" > 50%</div>
-				<div class="device-info-last-seen"> <img src="/static/location.png"> in my bed</div>
+				<div class="device-info-battery"> <img src="/battery.png" > 50%</div>
+				<div class="device-info-last-seen"> <img src="/location.png"> in my bed</div>
 				</div>
 			</div>
 		>
@@ -146,8 +146,8 @@
 				<h2> connor&#39;s sister </h2>
 
 				<div class="device-info">
-				<div class="device-info-battery"> <img src="/static/battery.png" > 50%</div>
-				<div class="device-info-last-seen"> <img src="/static/location.png"> in my bed</div>
+				<div class="device-info-battery"> <img src="/battery.png" > 50%</div>
+				<div class="device-info-last-seen"> <img src="/location.png"> in my bed</div>
 				</div>
 			</div>
 		>
@@ -159,8 +159,8 @@
 				<h2> connor&#39;s mom </h2>
 
 				<div class="device-info">
-				<div class="device-info-battery"> <img src="/static/battery.png" > 50%</div>
-				<div class="device-info-last-seen"> <img src="/static/location.png"> in my bed</div>
+				<div class="device-info-battery"> <img src="/battery.png" > 50%</div>
+				<div class="device-info-last-seen"> <img src="/location.png"> in my bed</div>
 				</div>
 			</div>
 		>
@@ -172,8 +172,8 @@
 				<h2> connor&#39;s cat </h2>
 
 				<div class="device-info">
-				<div class="device-info-battery"> <img src="/static/battery.png" > 50%</div>
-				<div class="device-info-last-seen"> <img src="/static/location.png"> in my bed</div>
+				<div class="device-info-battery"> <img src="/battery.png" > 50%</div>
+				<div class="device-info-last-seen"> <img src="/location.png"> in my bed</div>
 				</div>
 			</div>
 		>
@@ -193,7 +193,7 @@ var latlon = new mxn.LatLonPoint(51.50733, -0.12769);
 
 map.setCenterAndZoom(latlon, 15);
 var marker = new mxn.Marker(latlon);
-marker.setIcon('/static/location.png');
+marker.setIcon('/location.png');
 map.addMarker(marker);
 </script>
 </body>
