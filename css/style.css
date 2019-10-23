@@ -4,7 +4,7 @@ body {
 p, h1, h2 {
     font-family: "Comic Sans MS";
     color: red
-    }
+}
 
 .content, #shirtpromo {
 margin: 0 auto;
@@ -16,18 +16,22 @@ width: fit-content;
 
 #shirtprice {
     color: orange
-    }
+}
 
 a {
     color: inherit;
-    }
+}
 
 #subscribebean {
     position: fixed;
     bottom: 1%;
     left: 1%;
-    }
+}
 
 #subscribebean img {
     transform: rotate(15deg);
-    }
+}
+
+form #register input[type="text"] {
+	background-color: red;
+}

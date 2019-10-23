@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 #top {
 	background-image: url(/static/backdrop.png);
 	width: 100%;
@@ -55,7 +59,7 @@ body {
 	font-family: sans-serif;
 }
 
-#tmp{
+.section {
 	display:flex;
 	flex-direction: column;
 	align-items:center;
@@ -96,4 +100,36 @@ body {
 
 #headerleft h1 {
 	margin: 0;
+}
+
+form input[type="text"],
+form input[type="password"] {
+	background-color: #d9d9d9;
+	padding: 1em;
+	margin: 0.3em;
+	border: none;
+	border-radius: 0.5em;
+}
+
+form input[type="submit"] {
+	background-color: #2c2c2c;
+	color: #fff;
+	padding: 1em;
+	margin: 0.3em;
+	border: none;
+	border-radius: 0.5em;
+}
+
+.page {
+	min-height: 100vh;
+}
+
+#nottop h1 {
+	padding-top: 1em;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
