@@ -132,9 +132,7 @@
 
 <body>
 <script src="http://openlayers.org/api/OpenLayers.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
-<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
-
+<script src="http://mapstraction.com/mxn/build/latest/mxn.js?(openlayers)" type="text/javascript"></script>
 <div id="content">
 <div id="sidebar">
 	<div id="top">
@@ -209,14 +207,13 @@
 </div>
 
 <script type="text/javascript">
+var map = new mxn.Mapstraction('map', 'openlayers'); 
+var latlon = new mxn.LatLonPoint(51.50733, -0.12769);
 
-var mymap = L.map('map').setView([51.50733, -0.12769], 18);
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-	    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-	    maxZoom: 18,
-	    id: 'mapbox/streets-v11',
-	    accessToken: 'pk.eyJ1IjoiYWx2aWVyYWhtYW45MCIsImEiOiJjazN5d2ZoMWIwY3pxM2xtd3Bxdzd2ajRoIn0.j_XS99XAc5xXO-NPNO44SQ'
-}).addTo(mymap);
+map.setCenterAndZoom(latlon, 15);
+var marker = new mxn.Marker(latlon);
+marker.setIcon('/location.png');
+map.addMarker(marker);
 </script>
 </body>
 </html>
